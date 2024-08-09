@@ -27,6 +27,7 @@
       </AccordionContent>
     </AccordionItem>
   </Accordion>
+
  * @npm i react
  * @npm i --save-dev @types/react
  * @npm i clsx
@@ -35,10 +36,10 @@
  * @npm i @tabler/icons-react
  */
 
-import * as React from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import { IconChevronDown } from '@tabler/icons-react';
 import { clsx } from 'clsx';
+import * as React from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const Accordion = React.forwardRef<
@@ -106,4 +107,4 @@ const AccordionContent = React.forwardRef<
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
